@@ -1,0 +1,12 @@
+.litem{
+    background-color:purple;
+    color: aqua;
+    font-size: large;
+    height:60px;
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
