@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'leads.apps.LeadsConfig',
     'rest_framework',
     'frontend',
-    'user',
 ]
 
 MIDDLEWARE = [
