@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { render } from "react-dom";
 
 class App extends Component {
@@ -33,15 +33,17 @@ class App extends Component {
 
   render() {
     return (
-      <ul>
-        {this.state.data.map(contact => {
-          return (
-            <li key={contact.id}>
-              {contact.name} - {contact.email}
-            </li>
-          );
-        })}
-      </ul>
+      <Fragment>
+        <ul>
+          {this.state.data.map(contact => {
+            return (
+              <li key={contact.id}>
+                {contact.name} -- {contact.email}
+              </li>
+            );
+          })}
+        </ul>
+      </Fragment>
     );
   }
 }
