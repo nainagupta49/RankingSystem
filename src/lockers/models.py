@@ -25,7 +25,8 @@ class Availability(models.Model):
 	status			=models.BooleanField()
 
 class Occupancy(models.Model):
-	lockerid		=models.IntegerField(default="101",editable=True)
+	lockerid		=models.IntegerField()
 	date			=models.DateField()
 	occupancy		=models.FloatField()	
-	
+	class Meta:
+		unique_together=('lockerid','date')
